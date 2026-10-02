@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Thông tin cá nhân</title>
+        <style>
+            body {
+                background-color: #e0ffff;
+                font-family: Times New Roman, serif;
+                padding: 20px;
+                width: 600px;          
+                margin: 0 auto;          
+    }
+            img {
+                width: auto;       
+                height: auto;       
+                flex-shrink: 0;   
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red;"> Online Classifieds Search Form </h1>
+        <hr/>
+        <form id="classifiedForm">
+            <div style="font-weight: bold;">1) Search for a classified in the following sections: </div>
+            <br/>
+            <table>
+                <tr>
+                    <td><label><input type="radio" name="section" value="Employment"> Employment</label></td>
+                    <td><label><input type="radio" name="section" value="Personal"> Personal</label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="radio" name="section" value="For Sale"> For Sale</label></td>
+                    <td><label><input type="radio" name="section" value="Miscellaneous"> Miscellaneous</label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="radio" name="section" value="Housing"> Housing</label></td>
+                    <td><label><input type="radio" name="section" value="All of the above"> All of the above</label></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="font-weight: bold;">2) Search the following publications </div>
+            <br/>
+            <table>
+                <tr>
+                    <td><label><input type="checkbox" value="Midwest times"> Midwest times</label></td>
+                    <td><label><input type="checkbox" value="Modern News"> Modern News</label></td>
+                    <td><label><input type="checkbox" value="Modern News"> Modern News</label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" value="Great Lakes Classifieds"> Great Lakes Classifieds</label></td>
+                    <td><label><input type="checkbox" value="Middleton Daily"> Middleton Daily</label></td>
+                    <td><label><input type="checkbox" value="Cashtown Daily News"> Cashtown Daily News</label></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="font-weight: bold;">
+                3) From date: <input type="date" name="fromDate"> to <input type="date" name="toDate">
+            </div>
+            <br/>
+            <div style="font-weight: bold;"> 4) Enter a few keywords to describe the classified</div>
+            <br/>
+            <div>
+                <input type="text" name="keywords" style="width: 500px;">
+            </div>
+            <br/>
+            <div style="font-weight: bold;"> 5) Click one of the options below</div>
+            <form action="/search" method="GET">
+                <table>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary style="list-style: none; cursor: pointer;">
+                                    <img src="Bai49/Search.gif" alt="Search">
+                                </summary>
+                                <div style="margin-top: 5px;">
+                                <input type="text" placeholder="Nhập từ khóa...">
+                                </div>
+                            </details>
+                        </td>
+                        <td>
+                            <a href="https://support.google.com/?hl=vi">
+                                <img src="Bai49/Help.gif" alt="Help">
+                            </a>
+                        </td>
+                        <td>
+                            <button type="reset" style="border: none; background: transparent; padding: 0; cursor: pointer;">
+                                <img src="Bai49/Cancel.gif" alt="Cancel">
+                            </button>
+                        </td>
+    
+                    </tr>
+                </table>
+            </form>
+
+        </form>
+    </body>
+</html>
